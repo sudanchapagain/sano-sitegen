@@ -29,25 +29,24 @@ CSS and JS file's path are assumed to be `/src/assets/css` and `/src/assets/js`
 respectively.
 
 everything should be inside `/src/` and output is generated inside of `/dist/`.
-since, `/src/assets/` is copied in whole to `/dist/assets/`, version control and
+since, `/src/assets/` is copied in whole to `/dist/`, version control and
 deployment strategy should be considered to not have duplicates in two different
 folders.
 
 example directory structure:
 
 ```
-├───dist
-│   ├───assets
-│   │   ├───css
-│   │   ├───img
-│   │   └───js
+├───dist/
+│   ├───css/
+│   ├───img/
+│   ├───js/
 │   ├───index.html
 │   └───writings/
-└───src
+└───src/
     ├───assets
-    │   ├───css
-    │   ├───img
-    │   └───js
+    │   ├───css/
+    │   ├───img/
+    │   └───js/
     ├───index.md
     └───writings/
 
