@@ -225,7 +225,7 @@ func createPage(metadata Metadata, content string, inlineCSS, inlineJS template.
 		Content:    template.HTML(content),
 		InlineCSS:  inlineCSS,
 		InlineJS:   inlineJS,
-		AssetsPath: "./",
+		AssetsPath: "/",
 	}
 }
 
