@@ -61,7 +61,7 @@ func main() {
 		log.Fatalf("Error setting up directories: %v", err)
 	}
 
-	err = copyAssets(filepath.Join(srcDir, "assets"), filepath.Join(distDir, "assets"))
+	err = copyAssets(filepath.Join(srcDir, "assets"), distDir)
 	if err != nil {
 		log.Printf("Error copying assets: %v", err)
 	}
@@ -225,7 +225,7 @@ func createPage(metadata Metadata, content string, inlineCSS, inlineJS template.
 		Content:    template.HTML(content),
 		InlineCSS:  inlineCSS,
 		InlineJS:   inlineJS,
-		AssetsPath: "/assets/",
+		AssetsPath: "./",
 	}
 }
 
